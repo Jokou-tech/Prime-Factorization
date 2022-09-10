@@ -35,4 +35,9 @@ else:
                     values.append(t)
                     v = values.count(t)
                     results[t]= v
-            print(results)
+            resultsword=f"{results}"
+            resultsword=resultsword.replace("{", "")
+            resultsword=resultsword.replace("}", "")
+            resultsword=resultsword.replace(": ", "**")
+            resultsword=resultsword.replace(",", " x")
+            print(resultsword)
